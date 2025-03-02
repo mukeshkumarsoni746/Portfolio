@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Additional Color */
+ :root {
+    --lighting-color: #0089b7;
+    --dark-color: #003d62;
+    --darker-color: #003251;
+    --secondary-color: #fff700;
+  }
+
+body{
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    transition: 0.2s;
+
+}
+
+.navbar-nav li{
+    border-bottom: 2px transparent black;
+}
+
+.navbar-nav li:hover{
+    border-bottom: 2px solid black;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-section{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-logo{
+    font-weight: bold;
+}
+
+.container-home{
+    float: left;
+    display: flex;
+    padding-left: 31px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    line-height: 1.4;
+}
+
+.container-home h1{
+    color: rgb(49, 49, 108);
+    padding-left: 10px;
+}
+
+
+.home-section {
+    background-image: url(./images/Cover.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.Mukesh-img{
+    display: flex;
+    position: relative;
+    width: 450px;
+    height: 450px;
+    float: right;
+    padding-top: 69px;
+    padding-bottom: 16px;
+    opacity: 0.9;
+
+}
+
+.btn btn-primary{
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* About Section  */
+.about{
+    margin: 30px;
+}
+
+.about-section{
+    font-weight: 300;
+    font-style: bold;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-details img{
+    /* display: flex; */
+    float: left;
+    width: 450px;
+    height: 450px;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 63px;
+}
+
+/* Icons Modify */
+.skills-section{
+    text-align: center;
+    margin-top: 130px;
+    height: fit-content;
+}
+
+/* Education Section */
+.education-title h1{
+    color: rgb(49, 49, 108);
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;
+}
+
+.cards{
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 90px;
+}
+
+.card-body{
+    box-shadow: 10px 10px lightblue;
+    
+}
+
+.card-body p{
+    font-size: 24px;
+}
+
+/* Project Section */
+.project-section{
+    margin-top: 40px;
+    color: rgb(49, 49, 108);
+
+}
+
+.row{
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-logo{
+    margin: 28px;
+    padding: 28px;
+}
+
+/* Footer Section  */
+.section-footer{
+    /* background-color: rgb(50, 50, 86); */
+    background-color: #2a2d54;
+    color: #818998;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 55px;
+    text-transform: initial;
+    align-items: center;
+}
+
+.container-footer ul li h1{
+    color: white;
+}
+
+.container-footer ul li{
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.container-footer li a{
+    text-transform: none;
+    text-decoration: none;
+    color: #818998;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 187px;
+    gap: 15px; 
+    list-style: none; 
+}
+
+.social-icons li {
+    background-color: black;
+    border-radius: 48px;
+    padding: 10px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.container-home h3{
+    font-size: 2rem;
+    font-weight: bold;
+    white-space: nowrap; /* Fixed typo */
+    overflow: hidden;
+    border-right: 0.15rem solid darkblue;
+
+    margin: 0 auto;
+    animation: typing 5s steps(40, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: darkblue;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+/* Education Section */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    padding: 2rem;
+}
+
+.card{
+    display: grid;
+    place-items: center;
+}
+
+/* Project Section */
+#job{
+    background-color: #2a2d54;
+    margin-top: 40px;
+}
+
+.project_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 140px;
+    padding: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grid_items{
+    display: grid;
+    place-items: center;
+    grid-gap: 900px;
+    /* border-radius: 0.8rem; */
+    border-radius: 12px;
+    overflow: hidden;
+
+    transition: 0.2s ease-in-out;
+}
+
+.grid_items:hover{
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+}
+
+.grid_items:hover img{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.grid_items:hover .content{
+    background-color: white;
+    color: var(--dark-color);
+    transform: translateY(0px);
+}
+
+.content{
+    padding: 2rem;
+    position: relative;
+    top: -6.5rem;
+    margin-bottom: -6.5rem;
+    transition: 0.5s ease-in-out;
+    transform: translateY(100px);
+}
+
+
+/* .content h3{
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    
+} */
+
+.content a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--dark-color);
+
+}
+
+.content h3{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
